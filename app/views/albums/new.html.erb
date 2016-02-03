@@ -1,0 +1,11 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>Enter Your Album Details</h1>
+  <%= simple_form_for @album do |f| %>
+  <%= f.input :artist %>
+  <%= f.input :album %>
+  <%= f.input :review %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+
+</div>

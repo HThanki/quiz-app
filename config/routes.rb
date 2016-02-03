@@ -54,4 +54,5 @@ QuizApp::Application.routes.draw do
   #     resources :products
   #   end
   root 'albums#index'
+  resources :albums
 end
