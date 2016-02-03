@@ -7,22 +7,11 @@
 	<br />
 	<h4><i>Recommendations</i></h4>
 	<br />
-	<p><strong>Artist: </strong>Shellac<br>
-		<strong>Album: </strong>Dude Incredible
-		<br />
-		<br />
-		<strong>Review: </strong>Another Shellac classic. More great tunes from these guys.</p>
+	<p><% @albums.each do |a| %>
+		<div>
+			<p><strong>Artist: </strong><%= a.artist %><br />
+				<strong>Album: </strong><%= a.album %><br /><br />
+				<strong>Review: </strong><%= a.review %><br />
+		</div>
 	<hr />
-
-	<p><strong>Artist: </strong>Zombi<br>
-		<strong>Album: </strong>Shape Shift<br />
-		<br />
-		<strong>Review: </strong>Electronic Prog-Synth. Put this on and have a 80s sci-fi film soundtrack to your life!</p>
-		<hr />
-
-	<p><strong>Artist: </strong>Elder<br>
-		<strong>Album: </strong>Lore<br />
-		<br />
-		<strong>Review: </strong>Epic, heavy, psychedelic jams. The riffage is strong on this one. Turn up loud and enjoy.</p>
-		<hr />
-</div>
+	<% end %>
