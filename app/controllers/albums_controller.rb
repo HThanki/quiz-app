@@ -8,5 +8,15 @@ def new
 	@album =Album.new
 end
 
+def create
+	Album.create(album_params)
+	redirect_to root_path
+end
+
+private
+
+def album_params
+	params.require(:album).permit(:artist, :album, :review)
+end
 
 end
